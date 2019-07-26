@@ -14,13 +14,19 @@ def long_planeteer_calls(longer_calls)
   longer_calls.any? {|word| word.length > 4}
 end
 
-def find_the_cheese(foodstuffs)
-  # cheese_types = ["cheddar", "gouda", "camembert"]
-  if foodstuffs.include?("cheddar" || "gouda"|| "camembert")
-    puts self
-  else
-    nil
-  end
-end
+#def find_the_cheese(foodstuffs)
+#  cheese_types = ["cheddar", "gouda", "camembert"]
+#  foodstuffs.find do |cheese| cheese_types.include?(cheese)
+#end
+#end
 
+
+def find_the_cheese(foodstuffs)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  foodstuffs.find do |cheese|
+    if cheese_types.include?(cheese)
+      return cheese
+    end
+end
+end
   #foodstuffs.find {|cheeses| cheeses.is_a?("cheddar" || "gouda"|| "camembert")}
