@@ -1,12 +1,13 @@
-def roll_call_dwarves# code an argument here
+def roll_call_dwarves(dwarf_names)
+  dwarf_names.each do |names|
+  puts "[i] {names}"
+end
+
+def summon_captain_planet(planeteer_calls)
   # Your code here
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
-end
-
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls[""]
   # Your code here
 end
 
